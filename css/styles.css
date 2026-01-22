@@ -183,19 +183,21 @@ body {
     background: linear-gradient(90deg, #010674, #8084d0);
     overflow: hidden;
     padding: 15px 0;
-    margin: 0 auto 30px auto;
     border-radius: 10px;
     width: 100%;
-    max-width: 100vw;
+    position: relative;
 }
 
-
-.sale-track {
+.sale-marquee {
     display: flex;
-    width: fit-content;
+    white-space: nowrap;
+    width: max-content;
     animation: marquee 15s linear infinite;
+}
+
+.sale-marquee span {
+    padding-right: 120px;
     font-size: 18px;
-    padding-right: 80px
 }
 
 @keyframes marquee {
@@ -203,9 +205,92 @@ body {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(-33.333%);
     }
 }
 
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 40px 20px;
+    }
+    
+    #feature {
+        justify-content: center;
+    }
+    
+    #banner {
+        padding: 0 20px;
+    }
+     #product1 .pro-container {
+        justify-content: center;
+    }
 
+    #product1 .pro {
+        margin: 15px;
+    }
+}
 
+/* --- footer --- */
+
+footer.footer-site {
+    background-color: #1a1a1b;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-top: 1px solid #333;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-link {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #b8b8b8;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #8084D0;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #b8b8b8;
+    margin-bottom: 8px;
+}
+
+footer .follow i {
+    color: #b8b8b8;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+footer .follow i:hover {
+    color: #8084D0;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666;
+}
+
+/* --- footer --- */
+
+/* Fix for mobile centering */
+@media (max-width: 767px) {
+    footer .col-md-6 {
+        text-align: center;
+    }
+    .footer-heading {
+        margin-top: 20px;
+    }
+}
