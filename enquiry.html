@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Enquiry</title>
+</head>
+<body>
+
+<!-- Navbar ----------------------------------------------------------------------------->
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="" style="width: 50px;">DiscShop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="meettheteam.html">Meet the Team</a></li>
+      <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item active"><a class="nav-link" href="enquiry.html">Enquiry</a></li>
+    </ul>
+  </div>  
+</nav>
+<!-- Navbar End ------------------------------------------------------------------------->
+
+<!-- Main ------------------------------------------------------------------------------->
+<section id="page-header-contact" class="section-p1 text-center">
+    <h2>Contact Us</h2>
+    <p>Send us an enquiry and we'll get back within 3-5 days</p>
+</section>
+
+
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form id="enquiryForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>First Name</label>
+                        <input type="text" name="First Name" class="form-control" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Last Name</label>
+                        <input type="text" name="Last Name" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="Email" class="form-control" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>Country</label>
+                        <input type="text" name="Country" class="form-control" placeholder="Country" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>City</label>
+                        <input type="text" name="City" class="form-control" placeholder="City" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Postcode</label>
+                    <input type="text" name="Postcode" class="form-control" placeholder="Postcode" required>
+                </div>
+                <div class="form-group col-md-8">
+                    <label>Phone Number</label>
+                    <input type="tel" name="Phone" class="form-control" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="Phone Number" required>
+                    <div class="invalid-feedback">Please enter a valid phone number (digits only).</div>
+                </div>
+    </div>
+
+                <div class="form-group">
+                    <label>Enquiry Details</label>
+                    <textarea name="Enquiry" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-custom mr-3">Submit</button>
+                    <button type="reset" class="btn btn-outline-custom">Reset</button>
+</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section id="accordion" class="container mb-5">
+    <div class="section-title">
+        <h3>FaQ</h3>
+        <p>Frequently asked Questions</p>
+    </div>
+
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What products/services do you offer?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 interest-card">
+                                <img src="assets/listening.jpeg" class="card-img-top" alt="Person listening to a vinyl">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Vinyls/CDs</h5>
+                                    <p class="card-text">At DiscShop we sell the most exclusive vinyls and CDs for a price that wont be beaten!!</p>
+                                    <a href="products.html" class="mt-auto btn btn-custom">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 interest-card">
+                                <img src="assets/digital.jpg" class="card-img-top" alt="Person listening to an iPod">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Digital Downloads</h5>
+                                    <p class="card-text">Download digital files of your favorite songs to listen on the go, so you can listen to them wherever you are!!</p>
+                                    <a href="products.html" class="mt-auto btn btn-custom">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 interest-card">
+                                <img src="assets/createmusic.png" class="card-img-top" alt="Person making music">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Create/Sell Music</h5>
+                                    <p class="card-text">Create and sell your very own CDs and Vinyl on our website!!</p>
+                                    <a href="services.html" class="mt-auto btn btn-custom">Begin Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="card h-100 interest-card">
+                                <img src="assets/restorevinyl.jpg" class="card-img-top" alt="Person playing a vinyl">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Vinyl care/Restoration</h5>
+                                    <p class="card-text">Our Team has over 10 years worth of experience in restoring vinyls to be like-new!!</p>
+                                    <a href="services.html" class="mt-auto btn btn-custom">Begin now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">
+                        Whats the return policy?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    We can returns for up to 30 dats after purchase, after 30 days we will no longer be able to proccess the return.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">
+                        Whats payment methods do you accept?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    We accept all major banks and cards such as Visa and Mastercard.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour">
+                        How long does delivery take?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    It varies from order to order but delivery generally takes from 2-5 buissnes days.
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Main ------------------------------------------------------------------------------->
+
+<!-- Footer ----------------------------------------------------------------------------->
+<footer class="section-p1 footer-site">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <img class="logo mb-4" src="assets/logo.png" alt="DiscShop Logo" style="width: 50px;">
+                <h4 class="footer-heading">Contact Us</h4>
+                <p><strong>Address:</strong> 123 Road Street, City, Country</p>
+                <p><strong>Phone:</strong> 028 9736 3535</p>
+                <div class="follow">
+                    <h4 class="footer-heading mt-4">Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f mr-2"></i>
+                        <i class="fab fa-twitter mr-2"></i>
+                        <i class="fab fa-instagram mr-2"></i>
+                        <i class="fab fa-pinterest-p mr-2"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="footer-heading">About</h4>
+                <a href="about.html" class="footer-link">About Us</a>
+                <a href="#" class="footer-link">Delivery Information</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+                <a href="#" class="footer-link">Contact Us</a>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h4 class="footer-heading">My Account</h4>
+                <a href="#" class="footer-link">Sign In</a>
+                <a href="#" class="footer-link">View Cart</a>
+                <a href="#" class="footer-link">My Wishlist</a>
+                <a href="#" class="footer-link">Track My Order</a>
+                <a href="#" class="footer-link">Help</a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 pay">
+                <h4 class="footer-heading">Payment Methods</h4>
+                <p>We accept:</p>
+                <img src="assets/pay.png" alt="Payment Methods" class="img-fluid">
+            </div>
+        </div>
+        
+        <div class="row border-top pt-3 mt-3">
+            <div class="col-12 text-center">
+                <p class="copyright">© 2026 DiscShop - All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End ------------------------------------------------------------------------->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="js/formscript.js"></script>
+</body>
+</html>
